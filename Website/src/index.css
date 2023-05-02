@@ -1,0 +1,137 @@
+:root {
+  color: white;
+  background-color: #242424;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.1428571428571428rem;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #2994d1;
+  padding: 0;
+  margin-top: -70px;
+  width: 10%;
+}
+
+p {
+  margin: 0 auto;
+  color: #b9b9b9;
+  line-height: 1.7em;
+  padding-top: 1.5em;
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    width: 75%;
+  }
+}
+
+@media (max-width: 420px) {
+  p {
+    width: 90%;
+  }
+}
+
+svg {
+  width: 3rem;
+}
+
+header {
+  margin: 0 auto;
+  position: sticky;
+  top: 0rem;
+  z-index: 1;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+@media (max-width: 760px) {
+  nav li {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav li {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  nav li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  nav li {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+nav a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #2994d1;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+span {
+  color: #2994d1;
+}

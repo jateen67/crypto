@@ -1,0 +1,230 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./fonts/Montserrat-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/Montserrat-Bold.ttf) format("opentype");
+  font-weight: bold;
+}
+
+.navbar-container {
+  margin: 0 auto;
+  height: 0;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #424242;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/crypto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.im-jatin {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.input {
+  height: 2rem;
+  width: 30rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid #2994d1;
+}
+
+.submit {
+  transition: all 0.5s ease;
+  color: #fff;
+  border: 3px solid #2994d1;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: #2994d1;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: #fff;
+  background-color: rgb(7, 38, 84);
+  border: 3px solid rgb(17, 38, 84);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 875px) {
+  .im-jatin {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .im-jatin {
+    font-size: 3rem;
+  }
+
+  .input {
+    height: 1.5rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .im-jatin {
+    font-size: 2rem;
+  }
+
+  .input {
+    height: 1rem;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .im-jatin {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    height: 0.5rem;
+    width: 10rem;
+  }
+}
+
+.top-para {
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.projects-container {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.footer-container {
+  border-top: 1px solid grey;
+  padding-bottom: 2rem;
+}
+
+.my-projects {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.copy {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.link:hover {
+  color: rgb(61, 200, 247);
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #2994d1;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.success {
+  color: rgb(4, 238, 4);
+}
+
+.error {
+  color: #ff0000;
+}
