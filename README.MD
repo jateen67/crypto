@@ -1,4 +1,4 @@
-# Reddit Crypto Research Posts Classifier
+# AI Stock Recommender
 
 Project website: https://cryptorecommender.web.app/
 
