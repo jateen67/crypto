@@ -38,10 +38,10 @@ export default function Signup() {
   return (
     <div className="header-container">
       <h1 className="im-jatin" data-aos="fade-up">
-        r/CryptoCurrency Crypto Recommender
+        AI Stock Recommender
       </h1>
       <p className="top-para" data-aos="fade-up" data-aos-delay="500">
-        Sign up to get notified when the website goes live. A message will
+        Sign up to get notified when the service goes live. A message will
         appear when you've signed up successfully
       </p>
       <div className="email-container" data-aos="fade-up">
